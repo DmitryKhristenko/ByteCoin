@@ -18,6 +18,7 @@
 		B5D422E728BE26D40085EAAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D422E528BE26D40085EAAA /* LaunchScreen.storyboard */; };
 		B5D422F228BE27DD0085EAAA /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D422F128BE27DD0085EAAA /* CoinManager.swift */; };
 		B5D422F428BE3A420085EAAA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B5D422F328BE3A420085EAAA /* .gitignore */; };
+		B5DCE1132955E7580025F0C8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCE1122955E7580025F0C8 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B5D422E628BE26D40085EAAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5D422F128BE27DD0085EAAA /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		B5D422F328BE3A420085EAAA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B5DCE1122955E7580025F0C8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				B5D422DA28BE26D20085EAAA /* AppDelegate.swift */,
 				B5D422DC28BE26D20085EAAA /* SceneDelegate.swift */,
+				B5DCE1122955E7580025F0C8 /* Logger.swift */,
 			);
 			path = ByteCoin;
 			sourceTree = "<group>";
@@ -114,6 +117,7 @@
 				B5D422D328BE26D20085EAAA /* Sources */,
 				B5D422D428BE26D20085EAAA /* Frameworks */,
 				B5D422D528BE26D20085EAAA /* Resources */,
+				B5DCE1112955E6390025F0C8 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -171,6 +175,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B5DCE1112955E6390025F0C8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5D422D328BE26D20085EAAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -183,6 +209,7 @@
 				B5CF29DA28BE6D61005BA865 /* ApiKey.swift in Sources */,
 				B5D422DB28BE26D20085EAAA /* AppDelegate.swift in Sources */,
 				B5D422DD28BE26D20085EAAA /* SceneDelegate.swift in Sources */,
+				B5DCE1132955E7580025F0C8 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
